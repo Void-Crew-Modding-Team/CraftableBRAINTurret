@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33110.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CraftableBRAINTurret", "CraftableBRAINTurret\CraftableBRAINTurret.csproj", "{ED534875-A821-47E8-8A3E-B35FE0D5ADAA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ED534875-A821-47E8-8A3E-B35FE0D5ADAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED534875-A821-47E8-8A3E-B35FE0D5ADAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED534875-A821-47E8-8A3E-B35FE0D5ADAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED534875-A821-47E8-8A3E-B35FE0D5ADAA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4E4CC18F-2436-4CB8-9C22-D762D542BF25}
+	EndGlobalSection
+EndGlobal

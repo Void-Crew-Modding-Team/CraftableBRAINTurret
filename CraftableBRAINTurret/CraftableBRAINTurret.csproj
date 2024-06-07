@@ -52,7 +52,6 @@
     </Reference>
     <Reference Include="VoidManager">
       <HintPath>..\..\Void-Crew-Modding-Team\VoidManager\VoidManager\bin\Debug\net472\VoidManager.dll</HintPath>
-      <Private>False</Private>
     </Reference>
   </ItemGroup>
   

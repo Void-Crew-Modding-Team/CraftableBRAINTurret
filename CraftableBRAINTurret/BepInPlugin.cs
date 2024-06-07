@@ -1,9 +1,9 @@
 ﻿using BepInEx;
 using CG.Client.UserData;
 using CG.Ship.Object;
-using HarmonyLib;
 using ResourceAssets;
-using System.Reflection;
+using VoidManager.Content;
+using VoidManager.Utilities;
 
 namespace CraftableBRAINTurret
 {
@@ -12,8 +12,6 @@ namespace CraftableBRAINTurret
     [BepInDependency("VoidManager")]
     public class BepinPlugin : BaseUnityPlugin
     {
-        static FieldInfo UnlockOptionsFI = AccessTools.Field(typeof(UnlockItemDef), "unlockOptions");
-
         private void Awake()
         {
             GUIDUnion GUID = new GUIDUnion("6b2c6be56b6678643bd0039305890622");
@@ -29,10 +27,13 @@ namespace CraftableBRAINTurret
 
 
             //Sets crafting recipe
-            ResourceAssetContainer<CraftingDataContainer, UnityEngine.Object, CraftableItemDef>.Instance.GetAssetDefById(GUID).crafting = cr;
+            Craftables.Instance.SetRecipe(GUID, cr);
+
+            //Sets recipe for Endless
+            Craftables.Instance.AddQuestRecipeUsingDefaultRecipe(Game.EndlessQuestAsset, GUID);
 
             //Unlocks for crafting
-            UnlockOptionsFI.SetValue(ResourceAssetContainer<UnlockContainer, UnityEngine.Object, UnlockItemDef>.Instance.GetAssetDefById(GUID), new UnlockOptions() { UnlockCriteria = UnlockCriteriaType.Always });
+            Unlocks.Instance.SetUnlockOptions(GUID, MyPluginInfo.PLUGIN_GUID, new UnlockOptions() { UnlockCriteria = UnlockCriteriaType.Always });
 
             Logger.LogInfo($"Plugin {MyPluginInfo.PLUGIN_GUID} is loaded!");
         }

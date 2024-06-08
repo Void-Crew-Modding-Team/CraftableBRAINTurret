@@ -8,6 +8,6 @@ namespace CraftableBRAINTurret
 
         public override string Author => "Dragon";
 
-        public override string Description => "Makes B.R.A.I.N. turrets craftable. Requires All clients to install.";
+        public override string Description => "Makes B.R.A.I.N. Benediction Auto-Turret Mk1 craftable. Requires All clients to install.";
     }
 }

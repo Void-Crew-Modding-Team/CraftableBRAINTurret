@@ -25,6 +25,8 @@ namespace CraftableBRAINTurret
                 CanBeRecycled = true
             };
 
+            //Unlocks for crafting
+            Unlocks.Instance.SetUnlockOptions(GUID, MyPluginInfo.PLUGIN_GUID, new UnlockOptions() { UnlockCriteria = UnlockCriteriaType.Always });
 
             //Sets crafting recipe
             Craftables.Instance.SetRecipe(GUID, cr);
@@ -32,8 +34,6 @@ namespace CraftableBRAINTurret
             //Sets recipe for Endless
             Craftables.Instance.AddQuestRecipeUsingDefaultRecipe(Game.EndlessQuestAsset, GUID);
 
-            //Unlocks for crafting
-            Unlocks.Instance.SetUnlockOptions(GUID, MyPluginInfo.PLUGIN_GUID, new UnlockOptions() { UnlockCriteria = UnlockCriteriaType.Always });
 
             Logger.LogInfo($"Plugin {MyPluginInfo.PLUGIN_GUID} is loaded!");
         }

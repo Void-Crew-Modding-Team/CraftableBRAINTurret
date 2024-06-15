@@ -4,7 +4,7 @@
 
 # CraftableBRAINTurret
 
-Version 1.0.1  
+Version 1.1.0  
 For Game Version 0.26.1  
 Developed by Dragon  
 Requires VoidManager 1.1.1
@@ -14,7 +14,7 @@ Requires VoidManager 1.1.1
 
 ### 💡 Function
 
-- Makes B.R.A.I.N. Benediction Auto-Turret Mk1 craftable.
+- Makes B.R.A.I.N. Benediction Auto-Turret Mk1, Mk2, and Mk3 craftable.
 
 ### 🎮 Client Usage
 

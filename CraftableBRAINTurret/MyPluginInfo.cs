@@ -10,6 +10,6 @@ namespace CraftableBRAINTurret
         public const string PLUGIN_DESCRIPTION = "Makes B.R.A.I.N. Benediction Auto-Turrets Mk1-Mk3 craftable. Requires All clients to install.";
         public const string PLUGIN_ORIGINAL_AUTHOR = "Dragon";
         public const string PLUGIN_AUTHORS = "Dragon";
-        public const string PLUGIN_THUNDERSTORE_ID = "";
+        public const string PLUGIN_THUNDERSTORE_ID = "VoidCrewModdingTeam/CraftableBRAINTurret";
     }
 }

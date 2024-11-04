@@ -1,3 +1,6 @@
+## 1.1.2
+- Added Brain Carronades as craftables.
+
 ## 1.1.1
 - Updated for Game Version 0.27.0 (Update 5)
 

@@ -7,14 +7,14 @@
 Version [ModVersion]  
 For Game Version [GameVersion]  
 Developed by [Authors]  
-Requires VoidManager [VoidManagerVersion]
+Requires: [Dependencies]
 
 
 ---------------------
 
 ### 💡 Function
 
-- Makes B.R.A.I.N. Benediction Auto-Turret Mk1, Mk2, and Mk3 craftable.
+- Makes B.R.A.I.N. Benediction and Carronade Auto-Turrets Mk1-Mk3 craftable.
 
 ### 🎮 Client Usage
 
